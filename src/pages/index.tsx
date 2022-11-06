@@ -13,6 +13,9 @@ const headingStyles = {
 }
 const headingAccentStyles = {
   color: "#663399",
+  fontStyle: "italic",
+  fontSize: "1rem",
+  fontWeight: 100,
 }
 const paragraphStyles = {
   marginBottom: 48,
@@ -140,15 +143,30 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
+        Kira Brady<br />
+        <span style={headingAccentStyles}>Award-winning author</span>
       </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.tsx</code> to see this page
-        update in real-time. 😎
+      <p>
+        <a
+          style={linkStyle}
+          href="https://www.amazon.com/Kira-Brady/e/B0076TJKMW"
+        >
+          Kira's Books on Amazon 
+        </a>
       </p>
-      <ul style={doclistStyles}>
+      <h3>About Kira</h3>
+      <p style={paragraphStyles}>
+        Kira Brady's debut Hearts of Darkness was named one of the Best Books of Summer 2012 by Publishers Weekly. She is the author of the Deadglass Trilogy, apocalyptic paranormal romance set in a grisly modern day Seattle from Kensington Publishing.
+      </p>
+      <p>
+        A native Seattleitte, Kira spent her childhood hiking the rainy forests of the Pacific Northwest and drying out by the fire with a good book and a mug of something hot. She graduated with honors from the University of Pennsylvania, where she met her real life Prince Charming and promptly dragged him back to sunless Seattle. She fell in love with historic, haunted cities in graduate school. Now she writes about the twisted cities of her imagination, where wraiths and shape-shifters stalk the night and love redeems even the darkest heart. When not writing, she can be found drinking inordinately large mugs of Assam tea, knitting wool socks, and raising a wee heroine and hero-in-training.
+      </p>
+    </main>
+  )
+}
+
+/**
+ *       <ul style={doclistStyles}>
         {docLinks.map(doc => (
           <li key={doc.url} style={docLinkStyle}>
             <a
@@ -184,9 +202,7 @@ const IndexPage = () => {
         alt="Gatsby G Logo"
         src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
       />
-    </main>
-  )
-}
+ */
 
 export default IndexPage
 
